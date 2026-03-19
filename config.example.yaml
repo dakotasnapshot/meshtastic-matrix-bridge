@@ -15,30 +15,3 @@ matrix:
 channels:
   0: "!your_room_id:matrix.example.com"      # Primary / LongFast
   # 1: "!another_room:matrix.example.com"     # Secondary channel
-
-# Bot command configuration
-bot:
-  # Location for weather, sunrise/sunset
-  location: "Cushing, OK"
-
-  # NWS alert zone (find yours: https://alerts.weather.gov/)
-  # Leave empty to disable weather alerts
-  nws_zone: "OKC081"
-
-  # USGS earthquake bounding box: minlat, maxlat, minlon, maxlon
-  # Leave empty to disable earthquake monitoring
-  # Example covers Oklahoma + surrounding states:
-  quake_bounds: "33.5, 37.5, -103, -94.5"
-
-  # Network branding
-  network_name: "OKMesh"
-  network_url: "https://okmesh.org"
-
-  # Timezone for the time command (IANA format)
-  timezone: "America/Chicago"
-
-  # Units: "imperial" (°F, mph) or "metric" (°C, km/h)
-  units: "imperial"
-
-  # Custom MOTD (overrides auto-generated one if set)
-  # motd: "Welcome to MyMesh! Type cmd for commands."
