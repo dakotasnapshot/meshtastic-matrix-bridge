@@ -1,0 +1,23 @@
+[Unit]
+Description=Meshtastic <-> Matrix Bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=meshbridge
+WorkingDirectory=/opt/meshtastic-matrix-bridge
+
+ExecStart=/opt/meshtastic-matrix-bridge/venv/bin/python /opt/meshtastic-matrix-bridge/bridge.py
+
+Restart=always
+RestartSec=3
+
+Environment=PATH=/opt/meshtastic-matrix-bridge/venv/bin:/usr/local/bin:/usr/bin:/bin
+Environment=PYTHONUNBUFFERED=1
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

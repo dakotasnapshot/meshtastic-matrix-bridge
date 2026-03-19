@@ -1,0 +1,6 @@
+[Unit]
+Description=Meshtastic Bridge Watchdog
+
+[Service]
+Type=oneshot
+ExecStart=/opt/meshtastic-matrix-bridge/watchdog.sh
