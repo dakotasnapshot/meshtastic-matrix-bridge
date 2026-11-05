@@ -1,5 +1,7 @@
 # Meshtastic ⇄ Matrix Bridge
 
+Maintained personally by [Dakota Cole (@dakotasnapshot)](https://github.com/dakotasnapshot).
+
 A bidirectional bridge between [Meshtastic](https://meshtastic.org/) mesh radios and [Matrix](https://matrix.org/) chat rooms.
 
 Built for [OKMesh](https://okmesh.org) — Oklahoma's Meshtastic community.
